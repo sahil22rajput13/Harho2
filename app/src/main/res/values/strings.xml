@@ -1,0 +1,163 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Harho</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="thank_you_f">Thank you for choosing \nto grow, with Harho!
+    </string>
+    <string name="to_get_star">To get started, please enter the e-mail addressed used when purchasing your box and the unique reference number on your e-mail receipt.
+                    </string>
+    <string name="sow">Sow
+</string>
+    <string name="propagator_1">Propagator 1
+</string>
+    <string name="home">Home
+</string>
+    <string name="articles">Articles
+</string>
+    <string name="humidity">Humidity
+</string>
+    <string name="links">Links
+</string>
+    <string name="videos">Videos
+</string>
+    <string name="propagator_">Propagator 1
+</string>
+    <string name="ahead_of_us">Ahead of us placing your seeds, ensure the propagator is facing towards you as per the above image. The propagator number is located under each base
+</string>
+    <string name="email">Email</string>
+    <string name="enter_here">Enter Here</string>
+    <string name="unique_reference">Unique Reference</string>
+    <string name="next">Next</string>
+    <string name="update_prof">Update Profile
+</string>
+    <string name="name">Name</string>
+    <string name="displayname">Display Name</string>
+    <string name="age_optional">Age(Optional)</string>
+    <string name="project_name">Project Name</string>
+    <string name="whose_growing">Whose Growing</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="others">Others</string>
+    <string name="other_gender">Other Gender</string>
+    <string name="i_accept_al">I Accept all Terms &amp; Condition and\n Privacy Polices
+</string>
+    <string name="sign_up">Sign up</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="please_return_to_the_app_to_get_started_once_you_have_received_your_box">Please return to the app to get started\n once you have received your box</string>
+    <string name="return_to_app">Return to App</string>
+    <string name="checklist">Checklist
+</string>
+    <string name="mini_mist_s">Mini mist spray
+</string>
+    <string name="mixing_your_intro">Mixing your Soil
+</string>
+    <string name="which_date_">which date are you installing your product for the first time?
+</string>
+    <string name="x3_propagat2">x3_propagat2</string>
+    <string name="packets_of">14 packets of
+different seeds</string>
+    <string name="x3_propagat">x3_propagat</string>
+    <string name="coir_soil_blocks">Coir soil blocks</string>
+    <string name="seed_planter">Seed Planter</string>
+    <string name="x3_propagator_lid">x3\n Propagator lid</string>
+    <string name="x3_propagator_base">x3\n Propagator base</string>
+    <string name="have_you_re">Have you received \neverything?
+                </string>
+    <string name="you_can_exp">You can expect a response \nwithin 48 hours
+</string>
+    <string name="please_e_ma">Please e-mail INFO@HARHO.CO.UK \nwith your unique reference number stating which item you are missing\n
+</string>
+    <string name="mixing_your">Mixing your Soil
+</string>
+    <string name="beginning_y">Beginning your Install
+</string>
+    <string name="mix_for_5_m">Mix for 5 minutes
+</string>
+    <string name="the_soil_is">The soil is now ready \nto use.
+</string>
+    <string name="your_now_re">Your now ready to plant your seeds\u000D\n
+</string>
+    <string name="remove_slee">Remove Sleeve and recycle
+</string>
+    <string name="as_you_star">As you start mixing, make sure to reach the soil at the bottom of the bag. This ensures a consistent mixture\u000D\n\u000D\n\u000D\n\u000D\n\u000D\n
+</string>
+    <string name="you_will_ne">you will need this space to cover your soon to\n be placed seeds with your spare soil
+</string>
+    <string name="you_ll_need">You’ll need x1 Coir block
+</string>
+    <string name="break_up_so">Break up soil and stir into water to create a light, open mixture.
+</string>
+    <string name="make_sure_t">Make sure to only fill each propagator up to the\n line indicated below
+</string>
+    <string name="_1">1</string>
+    <string name="peel_the_st">Peel the sticker and unwrap the bag. Add 1.5L of (lukewarm) water
+</string>
+    <string name="installatio">installation Date
+</string>
+    <string name="seed_depth_">Seed depth is crucial to ensuring healthy\n growth, different produce requires different \ndepths - Too shallow and it may not grow \nstrong enough, too deep and it might not break \nthrough
+                </string>
+    <string name="_4">4</string>
+    <string name="select_date">Select date
+</string>
+    <string name="take_propag"> Take propagator 1 - Number is located \n underneath the propagator
+                </string>
+    <string name="as_per_imag">As per image above, place seeds on the top of \nthe soil, in the formation shown - Place seeds at \n least 0.5cm away from the sides
+                </string>
+    <string name="using_your_">Using your seed planter, push the newly placed \nseeds into the soil - The images below show \nhow far to push the Seed Planter into the soil
+                </string>
+    <string name="kale">kale</string>
+    <string name="chives_rocket"><![CDATA[Chives & Rocket]]></string>
+    <string name="your_instal">Your installation is now \ncomplete, welcome to\n My Harho
+</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="quiz">Quiz</string>
+    <string name="watering">Watering</string>
+    <string name="refresh">Refresh</string>
+    <string name="order">Order</string>
+    <string name="Nav_open">open</string>
+    <string name="Nav_close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="in_the_day_">In the day - Generally, the temperature within \nyour home will be sufficient to keep your \nproduce growing without your propagator lids \non, we recommend keeping them off and \nonly using within winter months when your heating \non
+</string>
+    <string name="at_night_be">At night - Best practice is to keep your lids on,\n generally it is cooler during this time. Not \nessential however growing conditions could be \nimproved by doing this
+</string>
+    <string name="the_section">The section on the left shows soil which has \nbeen left unwatered for too long - if parts of\nyour soil starts to turn to this colour, water immediately
+</string>
+    <string name="take_a_smal">Take a small pinch of soil (In a space where you \nhave not planted) if the soil crumbles out of \nyour fingers, it requires watering. If it sticks, your \nsoil does not require watering
+</string>
+    <string name="try_to_avoi">Try to avoid spraying the leaves of the plant,
+</string>
+    <string name="this_will_c">this will cause produce to wilt and could impact \ngrowth
+</string>
+    <string name="where_to_water">Where To Water</string>
+    <string name="change_cycle">Change Cycle</string>
+    <string name="your_pro">Your produce will naturally grow towards the \nsunlight, once a week ensure you turn your \npropagator to keep your produce growing \nstraight and healthy</string>
+    <string name="harvesting">Harvesting</string>
+    <string name="rocket">Rocket</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="_0">0</string>
+    <string name="score_list">Score List</string>
+    <string name="correct">Correct</string>
+    <string name="detail">Basil is an annual herb that typically needs \nto be replanted each year, although some \nvarieties can be overwintered indoors or in\n mild climates.</string>
+    <string name="wrong">Wrong\n</string>
+    <string name="correct_answer_true">Correct Answer : </string>
+    <string name="true1">True</string>
+    <string name="false1">False</string>
+    <string name="continue1">continue</string>
+    <string name="daily_task">Daily Task</string>
+    <string name="daily_checklist">Daily Checklist</string>
+
+</resources>

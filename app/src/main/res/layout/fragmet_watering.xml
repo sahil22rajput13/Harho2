@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.welcome.fragment.FragmentHumidity"
+
+    >
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="20dp" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/humidity"
+                    android:layout_width="112dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="50dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    android:text="@string/watering"
+                    android:textAppearance="@style/humidity"
+                    android:gravity="top"
+                    />
+                <View
+                    android:id="@+id/group_19107"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="291dp"
+                    app:layout_constraintTop_toBottomOf="@id/humidity"
+                    android:background="@drawable/watering1"
+                    />
+                <TextView
+                    android:id="@+id/tvHumidity1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    android:text="@string/the_section"
+                    android:textAppearance="@style/in_the_day_"
+                    android:lineSpacingExtra="6sp"
+                    android:translationY="-3.04sp"
+                    android:gravity="top"
+                    app:layout_constraintTop_toBottomOf="@id/group_19107"/>
+                <!--                    android:background="@drawable/in_the_day"-->
+
+                <View
+                    android:id="@+id/group_19108"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="291dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvHumidity1"
+                    android:background="@drawable/watering2"
+                    />
+                <TextView
+                    android:id="@+id/tvHumidity2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/take_a_smal"
+                    android:textAppearance="@style/in_the_day_"
+                    android:lineSpacingExtra="6sp"
+                    android:translationY="-3.04sp"
+                    android:gravity="top"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintTop_toBottomOf="@id/group_19108"/>
+                <!--                    android:background="@drawable/all_night"-->
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/watering2"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvHumidity2"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    android:text="@string/where_to_water"
+                    android:textAppearance="@style/humidity"
+                    android:gravity="top"
+                    />
+                <View
+                    android:id="@+id/group_19109"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="291dp"
+                    app:layout_constraintTop_toBottomOf="@id/watering2"
+                    android:background="@drawable/watering3"
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/watering3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintTop_toBottomOf="@id/group_19109"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    android:text="@string/try_to_avoi"
+                    android:textAppearance="@style/in_the_day_"
+                    android:gravity="top"
+                    />
+                <View
+                    android:id="@+id/group_19110"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="291dp"
+                    app:layout_constraintTop_toBottomOf="@id/watering3"
+                    android:background="@drawable/watering4"
+                    />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/back"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="44dp"
+                    android:background="@drawable/back"
+                    android:onClick="@{onClick}"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

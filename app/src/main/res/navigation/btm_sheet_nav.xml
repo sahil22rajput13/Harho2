@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btm_sheet_nav"
+    app:startDestination="@id/fragmentHome">
+
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.app.harho.view.welcome.fragment.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentHumidity"
+            app:destination="@id/fragmentHumidity" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentWatering2"
+            app:destination="@id/fragmentWatering2" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentCycle2"
+            app:destination="@id/fragmentCycle2" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentPropogatorProduct"
+            app:destination="@id/fragmentPropogatorProduct" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentLeaderBoard"
+            app:destination="@id/fragmentLeaderBoard" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentChecklist"
+            app:destination="@id/fragmentChecklist" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHumidity"
+        android:name="com.app.harho.view.welcome.fragment.FragmentHumidity"
+        android:label="fragment_cycle"
+        tools:layout="@layout/fragment_humidity" />
+    <fragment
+        android:id="@+id/fragmentWatering2"
+        android:name="com.app.harho.view.welcome.fragment.FragmentWatering"
+        android:label="FragmentWatering"
+        tools:layout="@layout/fragmet_watering" />
+    <fragment
+        android:id="@+id/fragmentCycle2"
+        android:name="com.app.harho.view.welcome.fragment.FragmentCycle"
+        android:label="FragmentCycle"
+        tools:layout="@layout/fragment_cycle" />
+    <fragment
+        android:id="@+id/fragmentPropogatorProduct"
+        android:name="com.app.harho.view.welcome.fragment.FragmentPropogatorProduct"
+        android:label="FragmentPropogatorProduct"
+        tools:layout="@layout/item_propogator_product">
+        <action
+            android:id="@+id/action_fragmentPropogatorProduct_to_fragmentPropogatorProductDetail"
+            app:destination="@id/fragmentPropogatorProductDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPropogatorProductDetail"
+        android:name="com.app.harho.view.welcome.fragment.FragmentPropogatorProductDetail"
+        android:label="FragmentPropogatorProductDetail" >
+        <action
+            android:id="@+id/action_fragmentPropogatorProductDetail_to_fragmentWebView"
+            app:destination="@id/fragmentWebView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWebView"
+        android:name="com.app.harho.view.welcome.fragment.FragmentWebView"
+        android:label="FragmentWebView" />
+    <fragment
+        android:id="@+id/fragmentLeaderBoard"
+        android:name="com.app.harho.view.welcome.fragment.FragmentLeaderBoard"
+        android:label="FragmentLeaderBoard" />
+    <fragment
+        android:id="@+id/fragmentChecklist"
+        android:name="com.app.harho.view.welcome.fragment.FragmentChecklist"
+        android:label="FragmentChecklist" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.app.harho.view.auth.LoginActivity"
+        android:label="activity_question"
+        tools:layout="@layout/activity_question" />
+</navigation>

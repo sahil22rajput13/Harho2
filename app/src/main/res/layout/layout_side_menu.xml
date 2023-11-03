@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.auth.LoginActivity">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/side_bg"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="13dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="20dp" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="@id/glEnd"
+                    app:layout_constraintLeft_toLeftOf="@id/glStart"
+                    app:layout_constraintRight_toRightOf="parent"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/rlHome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="74.73dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        >
+                        <View
+                            android:id="@+id/ivHome"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/side_home"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            />
+                        <View
+                            android:id="@+id/line_76"
+                            android:layout_width="209dp"
+                            android:layout_height="2dp"
+                            android:backgroundTint="#FFFFFF"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@id/tvHome"
+                            android:layout_marginTop="12.39dp"
+                            android:background="@drawable/side_line"
+                            />
+                        <TextView
+                            android:id="@+id/tvHome"
+                            android:layout_width="54dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="45dp"
+                            android:layout_alignParentTop="true"
+
+                            android:text="@string/home"
+                            android:textAppearance="@style/home"
+                            android:gravity="top"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rlLink"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14.73dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/rlHome"
+                        >
+                        <View
+                            android:id="@+id/ivLink"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/side_link"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            />
+                        <View
+                            android:id="@+id/ivLine2"
+                            android:layout_width="209dp"
+                            android:layout_height="2dp"
+                            android:backgroundTint="#FFFFFF"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@id/tvLink"
+                            android:layout_marginTop="12.39dp"
+                            android:background="@drawable/side_line"
+                            />
+                        <TextView
+                            android:id="@+id/tvLink"
+                            android:layout_width="54dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="45dp"
+                            android:layout_alignParentTop="true"
+
+                            android:text="@string/links"
+                            android:textAppearance="@style/links"
+                            android:gravity="top"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rlVideo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14.73dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/rlLink"
+                        >
+                        <View
+                            android:id="@+id/ivVideo"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/side_video"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            />
+                        <View
+                            android:id="@+id/ivLine3"
+                            android:layout_width="209dp"
+                            android:layout_height="2dp"
+                            android:backgroundTint="#FFFFFF"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@id/tvVideo"
+                            android:layout_marginTop="12.39dp"
+                            android:background="@drawable/side_line"
+                            />
+                        <TextView
+                            android:id="@+id/tvVideo"
+                            android:layout_width="54dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="45dp"
+                            android:layout_alignParentTop="true"
+
+                            android:text="@string/videos"
+                            android:textAppearance="@style/videos"
+                            android:gravity="top"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rlArticles"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14.73dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/rlVideo"
+                        >
+                        <View
+                            android:id="@+id/ivArticles"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/side_article"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            />
+                        <View
+                            android:id="@+id/ivLine4"
+                            android:layout_width="209dp"
+                            android:layout_height="2dp"
+                            android:backgroundTint="#FFFFFF"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@id/tvArticles"
+                            android:layout_marginTop="12.39dp"
+                            android:background="@drawable/side_line"
+                            />
+                        <TextView
+                            android:id="@+id/tvArticles"
+                            android:layout_width="54dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="45dp"
+                            android:layout_alignParentTop="true"
+
+                            android:text="@string/articles"
+                            android:textAppearance="@style/articles"
+                            android:gravity="top"
+                            />
+                    </RelativeLayout>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+        <View
+            android:id="@+id/pngwing_com"
+            android:layout_width="291dp"
+            android:layout_height="247dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/side_left"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/side_logout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.auth.LoginActivity">
+    <data>
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="20dp" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/rlBoxArrived"
+                    android:layout_width="match_parent"
+                    android:layout_height="339.57dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="81.96dp"
+                    android:background="@drawable/finalready" />
+
+
+                <TextView
+                    android:id="@+id/has_your_bo"
+                    android:layout_width="0dp"
+                    android:layout_height="82dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="48dp"
+                    android:background="@drawable/are_you_ready"
+                    app:layout_constraintTop_toBottomOf="@id/rlBoxArrived"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintStart_toStartOf="@id/glStart" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnYes"
+                    android:onClick="@{onClick}"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="72dp"
+                    android:background="@drawable/rectangle_1"
+                    android:gravity="center"
+                    android:text="@string/yes"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toLeftOf="@id/glStart"
+                    app:layout_constraintRight_toRightOf="@id/glEnd"
+
+                    app:layout_constraintTop_toBottomOf="@id/has_your_bo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnNo"
+                    android:layout_width="0dp"
+                    android:onClick="@{onClick}"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/rectangle_1"
+                    android:gravity="center"
+                    android:text="@string/no"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+
+                    app:layout_constraintTop_toBottomOf="@id/btnYes" />
+
+
+                <!-- Auto layout, variables, and unit scale are not yet supported -->
+                <!--                <androidx.appcompat.widget.AppCompatButton-->
+                <!--                    android:id="@+id/rectangle_1"-->
+                <!--                    android:layout_width="338dp"-->
+                <!--                    android:layout_height="60dp"-->
+                <!--                    android:layout_marginTop="67dp"-->
+                <!--                    android:background="@drawable/rectangle_1"-->
+                <!--                    android:fontFamily="@font/poppins_regular"-->
+                <!--                    android:text="@string/next"-->
+                <!--                    android:textAlignment="center"-->
+                <!--                    android:textColor="#FFFFFF"-->
+                <!--                    android:textSize="20sp"-->
+                <!--                    android:layout_marginBottom="49dp"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintEnd_toEndOf="@id/glEnd"-->
+                <!--                    app:layout_constraintStart_toStartOf="@id/glStart"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@id/rlUniqueForm"-->
+                <!--                    tools:ignore="VisualLintButtonSize" />-->
+
+                <!-- drawable/rectangle_1.xml -->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

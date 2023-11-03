@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.auth.LoginActivity">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="20dp" />
+
+
+
+                <TextView
+                    android:id="@+id/mix_for_5_m"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/mix_for_5_m"
+                    android:textAppearance="@style/mix_for_5_m"
+                    android:gravity="center_horizontal|top"
+                    android:layout_marginTop="20dp"
+                    />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/rectangle_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="291dp"
+                    android:background="@drawable/intro_imgview3"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintTop_toBottomOf="@id/mix_for_5_m"
+                    android:layout_alignParentTop="true"
+
+
+                    />
+                <TextView
+                    android:id="@+id/you_ll_need"
+                    android:layout_width="0dp"
+                    android:layout_height="58dp"
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toLeftOf="@id/glStart"
+                    app:layout_constraintRight_toRightOf="@id/glEnd"
+                    app:layout_constraintTop_toBottomOf="@id/rectangle_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/break_up_so"
+                    android:textAppearance="@style/break_up_so"
+                    android:lineSpacingExtra="6sp"
+                    android:translationY="-3.04sp"
+                    android:gravity="center_horizontal|top"
+                    />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/group_2512"
+                    android:layout_width="146dp"
+                    android:layout_height="138dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/intro_img1_1"
+                    app:layout_constraintLeft_toLeftOf="@id/you_ll_need"
+                    app:layout_constraintRight_toRightOf="@id/you_ll_need"
+                    app:layout_constraintTop_toBottomOf="@id/you_ll_need"
+                    />
+                <TextView
+                    android:id="@+id/remove_slee"
+                    android:layout_width="0dp"
+                    android:layout_height="85dp"
+                    app:layout_constraintLeft_toLeftOf="@id/glStart"
+                    app:layout_constraintRight_toRightOf="@id/glEnd"
+                    app:layout_constraintTop_toBottomOf="@id/group_2512"
+                    android:layout_marginBottom="120dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/as_you_star"
+                    android:textAppearance="@style/as_you_star"
+                    android:lineSpacingExtra="6sp"
+                    android:translationY="-3.04sp"
+                    android:gravity="center_horizontal|top"
+                    />
+
+
+
+
+                <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

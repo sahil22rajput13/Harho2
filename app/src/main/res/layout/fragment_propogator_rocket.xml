@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clRocket"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="20dp" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="top"
+                    android:text="@string/rocket"
+                    android:textAppearance="@style/humidity"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivRocketPlanting"
+                    android:layout_width="255dp"
+                    android:layout_height="191dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="157dp"
+                    android:layout_marginTop="264dp"
+                    android:background="@drawable/rocket_planting"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/ivRocket1"
+                    android:layout_width="83.19dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="137dp"
+                    android:layout_marginTop="31dp"
+                    android:background="@drawable/rocket_btn"
+                    android:onClick="@{onClick}"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toBottomOf="@id/humidity" />
+
+                <View
+                    android:id="@+id/ivRocket2"
+                    android:layout_width="83.19dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="86dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rocket_btn"
+                    android:onClick="@{onClick}"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toBottomOf="@id/ivRocket1" />
+
+                <View
+                    android:id="@+id/ivRocket3"
+                    android:layout_width="83.19dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rocket_btn"
+                    android:onClick="@{onClick}"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toBottomOf="@id/ivRocket2" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivRocketPlant"
+                    android:layout_width="162dp"
+                    android:layout_height="162dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rocket_plant"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toBottomOf="@id/ivRocket3" />
+
+                <View
+                    android:id="@+id/ivRocket4"
+                    android:layout_width="83.19dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginEnd="167dp"
+                    android:background="@drawable/rocket_btn"
+                    android:onClick="@{onClick}"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintTop_toBottomOf="@id/ivRocketPlant" />
+
+                <View
+                    android:id="@+id/ivRocket5"
+                    android:layout_width="83.19dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="106dp"
+                    android:background="@drawable/rocket_btn"
+                    android:onClick="@{onClick}"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintTop_toBottomOf="@id/ivRocket4" />
+
+                <View
+                    android:id="@+id/ivRocket6"
+                    android:layout_width="83.19dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="70dp"
+                    android:background="@drawable/rocket_btn"
+                    android:onClick="@{onClick}"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintTop_toBottomOf="@id/ivRocket5" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivRocketPlant2"
+                    android:layout_width="162dp"
+                    android:layout_height="162dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rocket_plant"
+                    android:onClick="@{onClick}"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintTop_toBottomOf="@id/ivRocket6" />
+
+                <View
+                    android:id="@+id/ivRocket7"
+                    android:layout_width="83.19dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="137dp"
+                    android:layout_marginTop="31dp"
+                    android:background="@drawable/rocket_btn"
+                    android:onClick="@{onClick}"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toBottomOf="@id/ivRocketPlant2" />
+
+                <View
+                    android:id="@+id/ivRocket8"
+                    android:layout_width="83.19dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="86dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rocket_btn"
+                    android:onClick="@{onClick}"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toBottomOf="@id/ivRocket7" />
+
+                <View
+                    android:id="@+id/ivRocket9"
+                    android:layout_width="83.19dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rocket_btn"
+                    android:onClick="@{onClick}"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toBottomOf="@id/ivRocket8" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/back"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="44dp"
+                    android:background="@drawable/back"
+                    android:onClick="@{onClick}"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clRocketGreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glStartGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="20dp" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glEndGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_end="20dp" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/humidityGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="top"
+                        android:text="@string/rocket"
+                        android:textAppearance="@style/humidity"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="@id/glEndGreen"
+                        app:layout_constraintStart_toStartOf="@id/glStartGreen"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivRocketPlanting2"
+                        android:layout_width="255dp"
+                        android:layout_height="191dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="177dp"
+                        android:layout_marginTop="264dp"
+                        android:background="@drawable/rocket_planting"
+                        app:layout_constraintStart_toStartOf="@id/glStartGreen"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <View
+                        android:id="@+id/ivRocketGreen1"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="137dp"
+                        android:layout_marginTop="31dp"
+                        android:background="@drawable/rocket_green_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartGreen"
+                        app:layout_constraintTop_toBottomOf="@id/humidityGreen" />
+
+                    <View
+                        android:id="@+id/ivRocketGreen2"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="86dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/rocket_green_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartGreen"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketGreen1" />
+
+                    <View
+                        android:id="@+id/ivRocketGreen3"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/rocket_green_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartGreen"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketGreen2" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivRocketPlantGreen"
+                        android:layout_width="162dp"
+                        android:layout_height="162dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rocket_plant"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartGreen"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketGreen3" />
+
+                    <View
+                        android:id="@+id/ivRocketGreen4"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginEnd="167dp"
+                        android:background="@drawable/rocket_green_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="@id/glEndGreen"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketPlantGreen" />
+
+                    <View
+                        android:id="@+id/ivRocketGreen5"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="106dp"
+                        android:background="@drawable/rocket_green_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="@id/glEndGreen"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketGreen4" />
+
+                    <View
+                        android:id="@+id/ivRocketGreen6"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="70dp"
+                        android:background="@drawable/rocket_green_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="@id/glEndGreen"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketGreen5" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivRocketPlantGreen2"
+                        android:layout_width="162dp"
+                        android:layout_height="162dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rocket_plant"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="@id/glEndGreen"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketGreen6" />
+
+                    <View
+                        android:id="@+id/ivRocketGreen7"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="137dp"
+                        android:layout_marginTop="31dp"
+                        android:background="@drawable/rocket_green_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartGreen"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketPlantGreen2" />
+
+                    <View
+                        android:id="@+id/ivRocketGreen8"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="86dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/rocket_green_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartGreen"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketGreen7" />
+
+                    <View
+                        android:id="@+id/ivRocketGreen9"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/rocket_green_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartGreen"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketGreen8" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clRocketRed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glStartRed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="20dp" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/glEndRed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_end="20dp" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/humidityRed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="top"
+                        android:text="@string/rocket"
+                        android:textAppearance="@style/humidity"
+                        app:layout_constraintEnd_toEndOf="@id/glEndRed"
+                        app:layout_constraintStart_toStartOf="@id/glStartRed"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivRocketPlanting3"
+                        android:layout_width="255dp"
+                        android:layout_height="191dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="177dp"
+                        android:layout_marginTop="264dp"
+                        android:background="@drawable/rocket_planting"
+                        app:layout_constraintStart_toStartOf="@id/glStartRed"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <View
+                        android:id="@+id/ivRocketRed1"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="137dp"
+                        android:layout_marginTop="31dp"
+                        android:background="@drawable/rocket_red_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartRed"
+                        app:layout_constraintTop_toBottomOf="@id/humidityRed" />
+
+                    <View
+                        android:id="@+id/ivRocketRed2"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="86dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/rocket_red_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartRed"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketRed1" />
+
+                    <View
+                        android:id="@+id/ivRocketRed3"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/rocket_red_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartRed"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketRed2" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivRocketPlantRed"
+                        android:layout_width="162dp"
+                        android:layout_height="162dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rocket_plant"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartRed"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketRed3" />
+
+                    <View
+                        android:id="@+id/ivRocketRed4"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginEnd="167dp"
+                        android:background="@drawable/rocket_red_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="@id/glEndRed"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketPlantRed" />
+
+                    <View
+                        android:id="@+id/ivRocketRed5"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="106dp"
+                        android:background="@drawable/rocket_red_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="@id/glEndRed"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketRed4" />
+
+                    <View
+                        android:id="@+id/ivRocketRed6"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="70dp"
+                        android:background="@drawable/rocket_red_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="@id/glEndRed"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketRed5" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivRocketPlantRed2"
+                        android:layout_width="162dp"
+                        android:layout_height="162dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rocket_plant"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="@id/glEndRed"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketRed6" />
+
+                    <View
+                        android:id="@+id/ivRocketRed7"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="137dp"
+                        android:layout_marginTop="31dp"
+                        android:background="@drawable/rocket_red_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartRed"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketPlantRed2" />
+
+                    <View
+                        android:id="@+id/ivRocketRed8"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="86dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/rocket_red_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartRed"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketRed7" />
+
+                    <View
+                        android:id="@+id/ivRocketRed9"
+                        android:layout_width="83.19dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/rocket_red_btn"
+                        android:onClick="@{onClick}"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toStartOf="@id/glStartRed"
+                        app:layout_constraintTop_toBottomOf="@id/ivRocketRed8" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

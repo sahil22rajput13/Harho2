@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="thank_you_f">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#3A5C41</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="to_get_star">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#7D7D7D</item>
+    </style>
+    <style name="email">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#3A5C41</item>
+    </style>
+    <style name="greenTextAppearance">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/darkGreenText</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+
+    </style>
+    <style name="videos">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="propagator_1">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#3A5C41</item>
+    </style>
+    <style name="articles">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="humidity">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#44644B</item>
+    </style>
+    <style name="propagator_">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#3A5C41</item>
+    </style>
+    <style name="links">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ahead_of_us">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8F8F8F</item>
+    </style>
+    <style name="home">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="update_prof">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="name">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="i_accept_al">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="please_retu">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#7D7D7D</item>
+    </style>
+    <style name="checklist">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#44644B</item>
+    </style>
+    <style name="mini_mist_s">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#F6ACAC</item>
+    </style>
+    <style name="seed_plante">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#F4DA70</item>
+    </style>
+    <style name="coir_soil_b">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#C4D984</item>
+    </style>
+    <style name="x3_propagat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#9EB149</item>
+    </style>
+    <style name="packets_of_">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#B89455</item>
+    </style>
+    <style name="x3_propagat2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#9EB149</item>
+    </style>
+    <style name="sow">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#3A5C41</item>
+    </style>
+    <style name="have_you_re">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">#95A799</item>
+    </style>
+    <style name="MyBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/MYBottomSheetStyle</item>
+
+    </style>
+    <style name="MYBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+    <style name="please_e_ma">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#7D7D7D</item>
+    </style>
+    <style name="you_can_exp">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#95A799</item>
+    </style>
+    <style name="mixing_your">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#3A5C41</item>
+    </style>
+    <!-- styles.xml -->
+    <style name="beginning_y">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#3A5C41</item>
+    </style>
+    <style name="mix_for_5_m">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#3A5C41</item>
+    </style>
+    <style name="the_soil_is">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#3A5C41</item>
+    </style>
+    <style name="remove_slee">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8F8F8F</item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="you_will_ne">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8F8F8F</item>
+    </style>
+    <style name="as_you_star">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8F8F8F</item>
+    </style>
+    <style name="you_ll_need">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8F8F8F</item>
+    </style>
+    <style name="break_up_so">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8F8F8F</item>
+    </style>
+    <style name="make_sure_t">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8F8F8F</item>
+    </style>
+
+
+    <style name="peel_the_st">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8F8F8F</item>
+    </style>
+    <style name="mixing_your_intro">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#3A5C41</item>
+    </style>
+    <style name="installatio">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#3A5C41</item>
+    </style>
+    <style name="which_date_">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#3A5C41</item>
+    </style>
+    <style name="select_date">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#D9D9D9</item>
+    </style>
+    <style name="take_propag">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#44644B</item>
+    </style>
+    <style name="using_your_">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8F8F8F</item>
+    </style>
+    <style name="seed_depth_">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8F8F8F</item>
+    </style>
+    <style name="as_per_imag">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8F8F8F</item>
+    </style>
+    <style name="in_the_day_">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8F8F8F</item>
+    </style>
+
+
+
+</resources>

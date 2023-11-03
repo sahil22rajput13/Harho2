@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.auth.LoginActivity">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="20dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPropogatorTittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="24dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:listitem="@layout/item_propogator_tittle" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPropogatorNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="33dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rvPropogatorTittle"
+                    tools:listitem="@layout/item_propogator_number" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/vpPropogator"
+                    android:layout_width="match_parent"
+                    android:layout_height="420dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rvPropogatorNumber" />
+
+                <FrameLayout
+                    android:id="@+id/flPropogator"
+                    android:layout_width="0dp"
+                    android:layout_height="475dp"
+                    android:layout_marginTop="30dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toBottomOf="@id/rvPropogatorNumber" />
+
+<!--                <androidx.appcompat.widget.AppCompatTextView-->
+<!--                    android:id="@+id/sow"-->
+<!--                    android:layout_width="64dp"-->
+<!--                    android:layout_height="45dp"-->
+<!--                    android:layout_alignParentTop="true"-->
+<!--                    android:layout_marginStart="182dp"-->
+<!--                    android:layout_marginTop="21dp"-->
+<!--                    android:layout_marginEnd="182dp"-->
+<!--                    android:fontFamily="@font/poppins_bold"-->
+<!--                    android:gravity="center_horizontal|top"-->
+<!--                    android:text="@string/sow"-->
+<!--                    android:textAppearance="@style/sow"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/glEnd"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/glStart"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/vpPropogator" />-->
+
+<!--                <androidx.appcompat.widget.AppCompatTextView-->
+<!--                    android:id="@+id/ahead_of_us"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:fontFamily="@font/poppins_regular"-->
+<!--                    android:gravity="center_horizontal|top"-->
+<!--                    android:lineSpacingExtra="6sp"-->
+<!--                    android:text="@string/ahead_of_us"-->
+<!--                    android:textAppearance="@style/ahead_of_us"-->
+<!--                    android:translationY="-3.04sp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/glEnd"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/glStart"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/sow" />-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/back"
+            android:onClick="@{onClick}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="49dp"
+            android:backgroundTint="#B89455"
+            android:fontFamily="@font/poppins_regular"
+            android:onClick="@{onClick}"
+            android:text="@string/next"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:cornerRadius="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="#B89455"
+            app:strokeWidth="1dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.auth.LoginActivity">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="20dp" />
+
+                <TextView
+                    android:id="@+id/checklist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="157dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="157dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="top"
+                    android:text="@string/checklist"
+                    android:textAppearance="@style/checklist"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/seeds"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="39dp"
+                    android:background="@drawable/seeds"
+                    app:layout_constraintEnd_toStartOf="@+id/propagator"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toBottomOf="@id/checklist" />
+                <!-- Auto layout, variables, and unit scale are not yet supported -->
+                <TextView
+                    android:id="@+id/packets_of_"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center_horizontal|top"
+                    android:text="@string/packets_of"
+                    android:textAppearance="@style/packets_of_"
+                    app:layout_constraintEnd_toEndOf="@id/seeds"
+                    app:layout_constraintStart_toStartOf="@id/seeds"
+                    app:layout_constraintTop_toBottomOf="@id/seeds" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/propagator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/propagator"
+                    app:layout_constraintBottom_toBottomOf="@+id/seeds"
+                    app:layout_constraintEnd_toStartOf="@+id/propagator_"
+                    app:layout_constraintStart_toEndOf="@+id/seeds"
+                    app:layout_constraintTop_toTopOf="@+id/seeds" />
+                <!-- Auto layout, variables, and unit scale are not yet supported -->
+                <TextView
+                    android:id="@+id/x3_propagat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal|top"
+                    android:text="@string/x3_propagat"
+                    android:textAppearance="@style/x3_propagat"
+                    app:layout_constraintEnd_toEndOf="@id/propagator"
+                    app:layout_constraintStart_toStartOf="@id/propagator"
+                    app:layout_constraintTop_toBottomOf="@id/propagator" />
+                <!-- Auto layout, variables, and unit scale are not yet supported -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/propagator_"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/propagator_lid"
+                    app:layout_constraintBottom_toBottomOf="@+id/seeds"
+                    app:layout_constraintEnd_toEndOf="@+id/glEnd"
+                    app:layout_constraintStart_toEndOf="@+id/propagator"
+                    app:layout_constraintTop_toTopOf="@+id/seeds" />
+
+                <TextView
+                    android:id="@id/x3_propagat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_horizontal|top"
+                    android:text="@string/x3_propagat"
+                    android:textAppearance="@style/x3_propagat"
+                    app:layout_constraintEnd_toEndOf="@id/propagator_"
+                    app:layout_constraintStart_toStartOf="@id/propagator_"
+                    app:layout_constraintTop_toBottomOf="@id/propagator_" />
+                <!-- Auto layout, variables, and unit scale are not yet supported -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/coir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/coir"
+                    app:layout_constraintEnd_toStartOf="@id/templates"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toBottomOf="@id/packets_of_" />
+
+                <TextView
+                    android:id="@+id/coir_soil_b"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|top"
+                    android:text="@string/coir_soil_blocks"
+                    android:textAppearance="@style/coir_soil_b"
+                    app:layout_constraintEnd_toEndOf="@id/coir"
+                    app:layout_constraintStart_toStartOf="@id/coir"
+                    app:layout_constraintTop_toBottomOf="@id/coir" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/templates"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/templates"
+                    app:layout_constraintEnd_toStartOf="@id/group_19113"
+                    app:layout_constraintBottom_toBottomOf="@id/coir"
+                    app:layout_constraintStart_toEndOf="@id/coir"
+                    app:layout_constraintTop_toTopOf="@id/coir" />
+
+                <TextView
+                    android:id="@+id/seed_plante"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|top"
+                    android:text="@string/seed_planter"
+                    android:textAppearance="@style/seed_plante"
+                    app:layout_constraintEnd_toEndOf="@id/templates"
+                    app:layout_constraintStart_toStartOf="@id/templates"
+                    app:layout_constraintTop_toBottomOf="@id/templates" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/group_19113"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/group_19113"
+                    app:layout_constraintBottom_toBottomOf="@id/coir"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintStart_toEndOf="@+id/templates"
+                    app:layout_constraintTop_toTopOf="@id/coir" />
+
+                <TextView
+                    android:id="@+id/mini_mist_s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|top"
+                    android:text="@string/coir_soil_blocks"
+                    android:textAppearance="@style/coir_soil_b"
+                    app:layout_constraintEnd_toEndOf="@id/group_19113"
+                    app:layout_constraintStart_toStartOf="@id/group_19113"
+                    app:layout_constraintTop_toBottomOf="@id/group_19113" />
+                <!-- Auto layout, variables, and unit scale are not yet supported -->
+                <TextView
+                    android:id="@+id/have_you_re"
+                    android:layout_width="0dp"
+                    android:layout_height="82dp"
+                    android:layout_marginTop="54dp"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    android:layout_marginEnd="82dp"
+                    android:background="@drawable/checklisttxt"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toBottomOf="@id/coir" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnYes"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="72dp"
+                    android:background="@drawable/rectangle_1"
+                    android:gravity="center"
+                    android:onClick="@{onClick}"
+                    android:text="@string/yes"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:backgroundTint="#B89455"
+                    app:layout_constraintLeft_toLeftOf="@id/glStart"
+                    app:layout_constraintRight_toRightOf="@id/glEnd"
+
+                    app:layout_constraintTop_toBottomOf="@id/have_you_re" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNo"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="32dp"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:onClick="@{onClick}"
+                    android:text="@string/no"
+                    android:textColor="#B89455"
+                    android:textSize="20sp"
+                    app:cornerRadius="6dp"
+                    app:layout_constraintEnd_toEndOf="@id/glEnd"
+                    app:layout_constraintStart_toStartOf="@id/glStart"
+                    app:layout_constraintTop_toBottomOf="@id/btnYes"
+                    app:strokeColor="#B89455"
+
+                    app:strokeWidth="1dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
